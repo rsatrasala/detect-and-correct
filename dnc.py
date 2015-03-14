@@ -55,7 +55,7 @@ urls = open('urls.csv').read().split("\r")
 u=1
 for row in urls:
 	try:
-		 url = row
+		url = row
 	        url = url.replace("$$todate$$", str(yesterdate))
         	print url
 	        browser.get(url)

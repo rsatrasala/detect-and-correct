@@ -56,18 +56,18 @@ u=1
 for row in urls:
 	try:
 		url = row
-        url = url.replace("$$todate$$", str(yesterdate))
-        print url
-	    browser.get(url)
-        time.sleep(reportRefreshTime)
-	    browser.find_element_by_css_selector(".range-label.ng-binding").click()
-        browser.switch_to_active_element()
-	    time.sleep(2)
-        daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")
-	    daterange[1].click()
-        rangeapply = browser.find_elements_by_css_selector(".apply-button")
-	    rangeapply[1].click()
-        time.sleep(5)
+	        url = url.replace("$$todate$$", str(yesterdate))
+        	print url
+		browser.get(url)
+	        time.sleep(reportRefreshTime)
+		browser.find_element_by_css_selector(".range-label.ng-binding").click()
+	        browser.switch_to_active_element()
+		time.sleep(2)
+	        daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")
+		daterange[1].click()
+	        rangeapply = browser.find_elements_by_css_selector(".apply-button")
+		rangeapply[1].click()
+	        time.sleep(5)
 		button = browser.find_element_by_xpath("//div[@title='Download']")
 		button.click()	
 		time.sleep(5)

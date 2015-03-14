@@ -7,7 +7,8 @@ What do you need to install?
 
 2.Selenium - I am using selenium for automating the user actions
 	1. The easiest way is to install using pip command : pip install -U selenium
-	2. If you do not have pip already, use the following command or the detailed instructions are available in the above link
+	2. If you do not have pip already, use the following command or the detailed instructions are available in the above link ![screen shot 2015-03-11 at 11 52 05 am](https://cloud.githubusercontent.com/assets/5702592/6649403/6b1b924a-c9a6-11e4-8fb1-869ea8a32409.png)
+
 	
 3.Splinter - is an abstraction layer on top of existing browser automation tools such as Selenium. It has a high-level API that makes it easy to write automated. Install instructions are available at https://splinter.readthedocs.org/en/latest/install.html
 

@@ -15,7 +15,7 @@ What do you need to install?
 
 How to setup the DNC script
 
-1. Download the files from this git project and place them in the same folder
+1. Download the files dnc.py and urls.csv from this git project and place them in the same folder
 
 2. Inside this folder open dnc.py using text edit and update the following values in the "#user initializations” section
 	1. dncdir : The directory where the downloaded reports should be saved for example "/Users/rsatrasala/Downloads/dnc"

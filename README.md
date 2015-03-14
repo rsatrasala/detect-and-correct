@@ -1,4 +1,3 @@
-# detect-and-correct
 
 Detect and Correct automation setup
 

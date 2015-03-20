@@ -19,7 +19,7 @@ How to setup the DNC script
 
 1. Download the files dnc.py and urls.csv from this git project and copy them into a folder. Lets call install directory
 
-2. Inside this folder open dnc.py using text edit and update the following values in the "#user initializations” section
+2. Inside this folder open dnc.py using text edit and update the following values in the "#user setup” section
 	1. dncdir : The directory where the downloaded reports should be saved for example "/Users/rsatrasala/Downloads/dnc". NOTE: This directory should be different from the install directory of step 1
 	2. mmxusername : This is your metamarkets username "rsatrasala@twitter.com"
 	3. mmxpassword : This is your metamarkets password "<password>"

@@ -17,7 +17,7 @@ What do you need to install?
 
 How to setup the DNC script
 
-1. Download the files dnc.py and urls.csv from this git project and copy them into a folder. Lets call install directory
+1. Download the files dnc.py and urls.csv from this git project and copy them into a folder. Lets call "install directory"
 
 2. Inside this folder open dnc.py using text edit and update the following values in the "#user setup” section
 	1. dncdir : The directory where the downloaded reports should be saved for example "/Users/rsatrasala/Downloads/dnc". NOTE: This directory should be different from the install directory of step 1
@@ -25,7 +25,7 @@ How to setup the DNC script
 	3. mmxpassword : This is your metamarkets password "<password>"
 	4. reportRefreshTime :  30
 
-3. open a terminal and do "cd [directory-of-downloaded-and unzipped-dir]"
+3. open a terminal and change to the install directory by doing "cd <install directory>"
 
 4. Finally run "python dnc.py". NOTE: If you see any indentation error, tab spaces would have been messed up. Make sure its tabbed as below ![screen shot 2015-03-13 at 10 22 22 pm](https://cloud.githubusercontent.com/assets/5702592/6650443/87206a3c-c9cf-11e4-9d55-44002b5df95d.png)
 

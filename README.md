@@ -11,7 +11,7 @@ What do you need to install?
 	
 
 	
-3. Splinter - is an abstraction layer on top of existing browser automation tools such as Selenium. It has a high-level API that makes it easy to write automated. Install instructions are available at https://splinter.readthedocs.org/en/latest/install.html
+3. Splinter - is an abstraction layer on top of existing browser automation tools such as Selenium. It has a high-level API that makes it easy to write automated. Install splinter using the command [sudo] pip install splinter
 
 4. Firefox - I am using firefox browser for the entire run. Available at https://www.mozilla.org/en-US/firefox/new/
 

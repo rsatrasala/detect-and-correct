@@ -58,16 +58,16 @@ for row in urls:
 		url = row
 	        url = url.replace("$$todate$$", str(yesterdate))
         	print url
-		browser.get(url)
-	        time.sleep(reportRefreshTime)
-		browser.find_element_by_css_selector(".range-label.ng-binding").click()
-	        browser.switch_to_active_element()
-		time.sleep(2)
-	        daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")
-		daterange[1].click()
-	        rangeapply = browser.find_elements_by_css_selector(".apply-button")
-		rangeapply[1].click()
-	        time.sleep(5)
+	        browser.get(url)
+        	time.sleep(reportRefreshTime)
+	        browser.find_element_by_css_selector(".range-label.ng-binding").click()
+        	browser.switch_to_active_element()
+	        time.sleep(2)
+        	daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")
+	        daterange[1].click()
+        	rangeapply = browser.find_elements_by_css_selector(".apply-button")
+	        rangeapply[1].click()
+        	time.sleep(5)
 		button = browser.find_element_by_xpath("//div[@title='Download']")
 		button.click()	
 		time.sleep(5)
@@ -112,15 +112,16 @@ for root, dirs, files in os.walk(dncdir):
                                                 print row[1]
                                                 print ""
                                         if j >= 6:
+						dsp = row[0]
                                                 creativeId = row[1]
                                                 auctions = row[2]
                                                 survivalRate = row[4]
                                                 ctr = row[5]
                                                 if int(auctions) > 10000:
-                                                        if survivalRate != "" and float(survivalRate) < 1:
-                                                                print "survival is < 1%      :  " + creativeId
+                                                        if survivalRate != "" and float(survivalRate) < 0.1:
+                                                                print "survival is < 0.1      :  " + dsp + " - " + creativeId 
                                                         if ctr != "" and float(ctr) < 0.01:
-                                                                print "ctr is < 0.01         : " + creativeId
+                                                                print "ctr is < 0.01         : " + dsp + " - " + creativeId
                                         j = j+1
                         except csv.Error as e:
                                 print e

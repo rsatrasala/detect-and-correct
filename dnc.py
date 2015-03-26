@@ -60,7 +60,7 @@ for row in urls:
         	print url
 	        browser.get(url)
         	time.sleep(reportRefreshTime)
-	        browser.find_element_by_css_selector(".range-label.ng-binding").click()
+                browser.find_element_by_css_selector(".picker-button-label.ng-binding").click()
         	browser.switch_to_active_element()
 	        time.sleep(2)
         	daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")

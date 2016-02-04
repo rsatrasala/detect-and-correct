@@ -8,9 +8,9 @@ from datetime import datetime, timedelta
 import sys
 
 #user setup
-dncdir = "< update with the dir to download reports>"
-mmxusername = "< update with metamarkets username>"
-mmxpassword = "< update with metamarkets password>"
+dncdir = "/Users/rsatrasala/Downloads/dnc"
+mmxusername = "rsatrasala@twitter.com"
+mmxpassword = "iwdamit1D!"
 reportRefreshTime = 30
 
 #initializations
@@ -60,23 +60,12 @@ for row in urls:
         	print url
 	        browser.get(url)
         	time.sleep(reportRefreshTime)
-                browser.find_element_by_css_selector(".picker-button-label.ng-binding").click()
-        	browser.switch_to_active_element()
-	        time.sleep(2)
-        	daterange = browser.find_elements_by_css_selector(".preset.ng-binding.ng-scope")
-	        daterange[1].click()
-        	rangeapply = browser.find_elements_by_css_selector(".apply-button")
-	        rangeapply[1].click()
-        	time.sleep(5)
 		button = browser.find_element_by_xpath("//div[@title='Download']")
 		button.click()	
 		time.sleep(5)
 		browser.switch_to_active_element()
 		time.sleep(1)
-		columns = browser.find_elements_by_css_selector(".ng-binding.ng-scope.unchecked-box")
-		columns[1].click()
-		columns[2].click()
-		browser.find_element_by_css_selector(".primary.ng-binding").click()
+		browser.find_element_by_css_selector("button.primary.ng-binding").click()
 		print str(u) + "/5 reports Downloaded..."
 		u = u+1
 		time.sleep(reportRefreshTime)
@@ -115,8 +104,8 @@ for root, dirs, files in os.walk(dncdir):
 						dsp = row[0]
                                                 creativeId = row[1]
                                                 auctions = row[2]
-                                                survivalRate = row[4]
-                                                ctr = row[5]
+                                                survivalRate = row[5]
+                                                ctr = row[6]
                                                 if int(auctions) > 10000:
                                                         if survivalRate != "" and float(survivalRate) < 0.1:
                                                                 print "survival is < 0.1      :  " + dsp + " - " + creativeId 

@@ -8,10 +8,10 @@ from datetime import datetime, timedelta
 import sys
 
 #user setup
-dncdir = "/Users/rsatrasala/Downloads/dnc"
-mmxusername = "rsatrasala@twitter.com"
-mmxpassword = "iwdamit1D!"
-reportRefreshTime = 30
+dncdir = "<dnc dir>"
+mmxusername = "<username>"
+mmxpassword = "<password>"
+reportRefreshTime = 45
 
 #initializations
 yday = datetime.now() - timedelta(days=1)
